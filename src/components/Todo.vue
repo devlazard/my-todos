@@ -4,7 +4,7 @@
             <v-list dense style="width: 100%">
                 <v-list-tile>
                     <v-list-tile-action>
-                        <v-checkbox v-model="todo.done" color="orange" @change="$emit('savetodos')"></v-checkbox>
+                        <v-checkbox v-model="todo.done" color="white" @change="$emit('savetodos')"></v-checkbox>
                     </v-list-tile-action>
                     <v-list-tile-content class="pt-4">
                         <span @click="todo.editable = true" @keyup.enter="todo.editable = false;" style="width: 100%;">
@@ -16,13 +16,13 @@
                                 solo flat
                                 v-model="todo.text"
                                 :disabled="!todo.editable"
-                                color="orange"
+                                color="white"
                             ></v-text-field>
                         </span>
                     </v-list-tile-content>
                     <v-list-tile-action right>
                         <v-btn flat small @click="$emit('deltodo', index)">
-                            <v-icon color="orange">fa-3x fa-times</v-icon>
+                            <v-icon color="white">fa-3x fa-times</v-icon>
                         </v-btn>
                     </v-list-tile-action>
                 </v-list-tile>
@@ -41,12 +41,12 @@ export default {
 
 <style scoped>
 .todo {
-    border-left: 4px solid var(--border-color,orange);
+    border-left: 4px solid var(--border-color,white);
 }
 .done {
     --border-color: #424242;
 }
 .not-done {
-    --border-color: orange;
+    --border-color: white;
 }
 </style>
