@@ -10,7 +10,7 @@
                 <v-list-tile>
                     <v-list-tile-action left style="max-width:10px !important;">
                         <span class="hoverResetAll" left @click="$emit('delalltodos')">
-                            <v-icon color="white">fa-trash-alt</v-icon>
+                            <v-icon color="white">fa-filter</v-icon>
                         </span>
                     </v-list-tile-action>
                     <v-list-tile-content class="pt-4">
