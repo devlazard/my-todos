@@ -1,6 +1,6 @@
 {
-  "name": "My Todo App",
-  "short_name": "My Todo App",
+  "name": "My Todos",
+  "short_name": "My Todos",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",
