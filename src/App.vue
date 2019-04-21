@@ -2,7 +2,8 @@
   <v-app>
     <TheHeader/>
     <v-content style="background: #212121;min-height: 90vh;">
-      <router-view/>
+      <Home/>
+      <!-- <router-view/> -->
     </v-content>
     <!-- <TheFooter/> -->
   </v-app>
@@ -10,6 +11,7 @@
 
 <script>
 import TheHeader from '@/components/TheHeader';
+import Home from '@/views/Home';
 // import TheFooter from '@/components/TheFooter';
 
 export default {
@@ -21,6 +23,7 @@ export default {
   },
   components: {
     TheHeader,
+    Home,
     // TheFooter
   }
 }

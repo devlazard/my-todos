@@ -16,11 +16,11 @@
                     <v-list-tile-content class="pt-4">
                         <span style="width: 100%;" @keyup.enter="$emit('addtodo');todo.text=''">
                             <v-text-field
+                                color="orange"
                                 style="width: 100%;"
                                 solo flat
                                 v-model="todo.text"
                                 label="What needs to be done?"
-                                color="white"
                             ></v-text-field>
                         </span>
                     </v-list-tile-content>

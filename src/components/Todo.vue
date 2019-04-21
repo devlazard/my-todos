@@ -4,7 +4,7 @@
             <v-list dense style="width: 100%">
                 <v-list-tile>
                     <v-list-tile-action>
-                        <v-checkbox v-model="todo.done" color="orange"></v-checkbox>
+                        <v-checkbox v-model="todo.done" color="orange" @change="$emit('savetodos')"></v-checkbox>
                     </v-list-tile-action>
                     <v-list-tile-content class="pt-4">
                         <span @click="todo.editable = true" @keyup.enter="todo.editable = false;" style="width: 100%;">
@@ -16,7 +16,7 @@
                                 solo flat
                                 v-model="todo.text"
                                 :disabled="!todo.editable"
-                                color="white"
+                                color="orange"
                             ></v-text-field>
                         </span>
                     </v-list-tile-content>
