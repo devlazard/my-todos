@@ -22,7 +22,7 @@
                     </v-list-tile-content>
                     <v-list-tile-action right>
                         <v-btn flat small @click="$emit('deltodo', index)">
-                            <v-icon color="white">fa-3x fa-times</v-icon>
+                            <v-icon color="error">fa-3x fa-times</v-icon>
                         </v-btn>
                     </v-list-tile-action>
                 </v-list-tile>
@@ -41,12 +41,12 @@ export default {
 
 <style scoped>
 .todo {
-    border-left: 4px solid var(--border-color,white);
+    border-left: 7px solid var(--border-color,white);
 }
 .done {
     --border-color: #424242;
 }
 .not-done {
-    --border-color: white;
+    --border-color: #ff5252;
 }
 </style>
