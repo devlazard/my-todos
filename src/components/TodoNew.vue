@@ -3,14 +3,14 @@
         class="todo pt-1 mb-2"
         :class="(todo.done)?'done':'not-done'"
         flat dark
-        style="border-left: 4px solid white"
+        style="border-left: 4px solid orange"
         >
         <v-layout style="width: 100%">
             <v-list dense style="width: 100%;">
                 <v-list-tile>
                     <v-list-tile-action left style="max-width:10px !important;">
                         <span class="hoverResetAll" left @click="$emit('delalltodos')">
-                            <v-icon>fa-trash-alt</v-icon>
+                            <v-icon color="orange">fa-trash-alt</v-icon>
                         </span>
                     </v-list-tile-action>
                     <v-list-tile-content class="pt-4">
@@ -26,7 +26,7 @@
                     </v-list-tile-content>
                     <v-list-tile-action>
                         <v-btn flat small @click="$emit('addtodo');todo.text=''">
-                            <v-icon>fa-plus</v-icon>
+                            <v-icon color="orange">fa-plus</v-icon>
                         </v-btn>
                     </v-list-tile-action>
                 </v-list-tile>

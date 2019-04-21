@@ -1,10 +1,10 @@
 <template>
-    <v-card class="todo pt-1 mb-2" :class="(todo.done)?'done':'not-done'" flat dark>
+    <v-card class="todo pt-1 mb-2" :class="(todo.done)?'done':'not-done'" flat dark >
         <v-layout>
             <v-list dense style="width: 100%">
                 <v-list-tile>
                     <v-list-tile-action>
-                        <v-checkbox v-model="todo.done"></v-checkbox>
+                        <v-checkbox v-model="todo.done" color="orange"></v-checkbox>
                     </v-list-tile-action>
                     <v-list-tile-content class="pt-4">
                         <span @click="todo.editable = true" @keyup.enter="todo.editable = false;" style="width: 100%;">
@@ -22,7 +22,7 @@
                     </v-list-tile-content>
                     <v-list-tile-action right>
                         <v-btn flat small @click="$emit('deltodo', index)">
-                            <v-icon>fa-3x fa-times</v-icon>
+                            <v-icon color="orange">fa-3x fa-times</v-icon>
                         </v-btn>
                     </v-list-tile-action>
                 </v-list-tile>
@@ -41,12 +41,12 @@ export default {
 
 <style scoped>
 .todo {
-    border-left: 4px solid var(--border-color,orangle);
+    border-left: 4px solid var(--border-color,orange);
 }
 .done {
-    --border-color: black;
+    --border-color: #424242;
 }
 .not-done {
-    --border-color: white;
+    --border-color: orange;
 }
 </style>
