@@ -1,4 +1,6 @@
-# todo-app
+# my-todos
+
+# https://my-todos-imsamtar.netlify.com
 
 ## Project setup
 ```
