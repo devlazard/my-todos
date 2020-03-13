@@ -1,6 +1,6 @@
 # my-todos
 
-## https://my-todos-devlazard.netlify.com
+## https://my-todos-imsamtar.netlify.com
 
 ## Project setup
 ```
